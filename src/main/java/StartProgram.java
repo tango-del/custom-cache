@@ -40,7 +40,6 @@ public class StartProgram {
     }
 
     private static void initSpark() {
-        // TODO спросить нужно ли возвращать null
         CustomCache customCache = new CustomCache(cacheLifeCycle);
 
         Spark.post("/create-cache/:cache-name", ((request, response) -> {
